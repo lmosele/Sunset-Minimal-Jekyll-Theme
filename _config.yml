@@ -1,0 +1,12 @@
+# Site settings
+title: My Awesome New Blog
+email: email@domain.com
+description: "A place where I share the lessons I learned in all things design, web, and photography related."
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://blog.myname.com" # the base hostname & protocol for your site
+twitter_username: l_mosele
+instagram_username: 300iso
+github_username:  lmosele
+
+# Build settings
+markdown: kramdown

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+
+    {% include header.html %}
+
+    <div class="text--center mainHeader"> 
+      <h1 class="page-heading">{{ site.title }}</h1>
+      <h2 class="subhead">A blog about design, photography, and culture.</h2> 
+    </div>
+
+    <div class="page-content">
+      <div class="wrapper">
+        {{ content }}
+      </div>
+    </div>
+
+    {% include footer.html %}
+
+    {% include scripting.html %}
+
+  </body>
+
+</html>

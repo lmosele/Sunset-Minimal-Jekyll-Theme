@@ -1,0 +1,209 @@
+// Universal Concise overwrites
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+    font-family: $base-font-family;
+    margin-top: 20px;
+}
+ p {
+ 	font-family: $reader-font-family;
+ }
+hr {
+  padding-bottom: 20px;
+  margin-top: 20px;
+}
+
+// Banner Image
+ .mainHeader {
+ 	// background-image: url(https://scontent.xx.fbcdn.net/hphotos-prn2/t31.0-8/1072695_684291068263136_230293664_o.jpg);
+ 	@include linearGradient($brand-color, $second-color);
+ 	height: 200px;
+ 	background-size: cover;
+ 	width: 100%;
+ }
+.page-heading {
+    font-size: 3em;
+    padding-top: 50px;
+    color: white;
+}
+.subhead {
+    font-size: 1.2em;
+    color: darken(white, 00%);
+}
+
+
+// Logo
+.site-header {
+	min-height: 80px;
+	border-top: 0;
+	padding-top:10px;
+}
+.site-title {
+	background-image: url(../assets/img/logo.png);
+  height: 55px;
+  background-repeat: no-repeat;
+  background-size: 30%;
+  color: transparent;
+  width: 200px;
+  margin-top: 0;
+  :hover {
+  	color: black;
+  }
+}
+
+// Navigation links
+.site-nav {
+    top: 30px;
+    // right: 30px;
+}
+.site-nav .page-link {
+    color: #333;
+    line-height: inherit;
+    :hover {
+    	color: $brand-color;
+    }
+}
+@include media-query($on-palm) {
+    .site-nav .menu-icon {
+	    width: 36px;
+	    height: 36px;
+	}
+}
+
+
+
+// Main page post feed
+.post-list li {
+	border-bottom: 1px solid $grey-color-light
+}
+.post-list li:hover {
+	border-bottom: 5px solid $brand-color
+}
+.post-link {
+    font-size: 1em;
+}
+.post-link:hover > h2{
+	color: $brand-color;
+}
+
+p.post-text {
+    font-size: 1em;
+    font-family: serif;
+    color: #525252;
+    font-family: $reader-font-family;
+}
+
+
+// Recent posts sidebar
+.recentPosts {
+	position: fixed;
+}
+.recentPosts li {
+	border-left: 1px solid $grey-color;
+	color: #333;
+	margin-bottom:20px;
+	list-style: none;
+	font-size: 1em;
+	font-family: $reader-font-family;
+	a {
+		padding: 15px;	
+		color: $grey-color;
+	}
+}
+.recentPosts li:hover  {
+	border-left: 5px solid $brand-color;
+	color: $brand-color;
+	cursor: pointer;
+	a:hover {
+		text-decoration: none;
+		color: $brand-color;
+	}
+}
+
+
+// Social icons
+ .share-btn {
+    display: inline-block;
+    color: $brand-color;
+    padding: 0.5em;
+    width: 4em;
+    opacity: 0.9;
+    outline: none;
+    text-align: center;
+    border-bottom: 5px solid transparent;
+}
+.share-btn:hover {
+  color: $second-color;
+  border-bottom: 5px solid $second-color;
+}
+.share-btn:active {
+  position: relative;
+  top: 2px;
+  box-shadow: none;
+  color: $second-color;
+  outline: none;
+}
+
+// Image captions for image.html
+.image-wrapper {
+    text-align: center;
+
+    .image-caption {
+        color: $grey-color;
+        margin-top: $spacing-unit / 3;
+    }
+}
+
+
+// Post slider
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  }
+
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+  }
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+  }
+
+.rslides img {
+  display: block;
+  height: auto;
+  float: left;
+  width: 100%;
+  border: 0;
+  }
+
+// Scrollbar
+
+::-webkit-scrollbar {
+  width: 8px;
+  border-radius:4px;
+  height: 1em;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $brand-color;
+}
+
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+body {
+  scrollbar-face-color: $brand-color;
+  scrollbar-track-color: #fff;
+}

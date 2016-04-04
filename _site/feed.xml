@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Palavras</title>
+    <description>A place where I share the lessons I learned in all things design, web, and photography related.</description>
+    <link>http://blog.lmosele.com/</link>
+    <atom:link href="http://blog.lmosele.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Wed, 04 Nov 2015 09:25:37 -0500</pubDate>
+    <lastBuildDate>Wed, 04 Nov 2015 09:25:37 -0500</lastBuildDate>
+    <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Web Typography For Dummies</title>
+        <description>&lt;p&gt;Let’s face it, not many people care about web typography, and for the 1% of geeks who do and want to learn more, it’s very hard to find a community that is &lt;em&gt;open&lt;/em&gt; to questions and beginners trying to find their footing. For that reason, I wanted to consolidate some of the more basic starting points of web typography in CSS for my own sake, if not for the sake of the people I learn alongside.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Please note that there is no “right” answer for typography, it’s mostly subjective or based off of years of industry experience from people older than I, but nevertheless, it doesn’t mean these rules are hard and fast.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;the-markup&quot;&gt;The Markup&lt;/h2&gt;
+
+&lt;p&gt;Let’s start with our html, we want to cover a wide range of type here, so let’s not limit ourselves to just a simple paragraph tag:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;body&amp;gt;&lt;/span&gt;
+	&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;content&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+		&lt;span class=&quot;nt&quot;&gt;&amp;lt;h1&amp;gt;&lt;/span&gt;This Is My Title&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h1&amp;gt;&lt;/span&gt;
+		&lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&lt;/span&gt;Lorem ipsum Laboris &lt;span class=&quot;nt&quot;&gt;&amp;lt;b&amp;gt;&lt;/span&gt;dolore ex anim Duis&lt;span class=&quot;nt&quot;&gt;&amp;lt;/b&amp;gt;&lt;/span&gt; nisi Ut dolor aliquip dolor enim aliqua occaecat consequat eiusmod occaecat in.&lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+		&lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&lt;/span&gt;Lorem &lt;span class=&quot;nt&quot;&gt;&amp;lt;i&amp;gt;&lt;/span&gt;ipsum Laboris dolore&lt;span class=&quot;nt&quot;&gt;&amp;lt;/i&amp;gt;&lt;/span&gt; ex anim Duis nisi Ut dolor aliquip dolor enim aliqua occaecat consequat eiusmod occaecat in.&lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+		&lt;span class=&quot;nt&quot;&gt;&amp;lt;ul&amp;gt;&lt;/span&gt;
+			&lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;List One&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+			&lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;List Two&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+			&lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;List Three&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+		&lt;span class=&quot;nt&quot;&gt;&amp;lt;/ul&amp;gt;&lt;/span&gt;
+		&lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;#&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Lorem ipsum Irure dolore ad dolor magna.&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+	&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Result:&lt;/p&gt;
+
+&lt;p data-height=&quot;268&quot; data-theme-id=&quot;0&quot; data-slug-hash=&quot;vNaYGq&quot; data-default-tab=&quot;result&quot; data-user=&quot;lmosele&quot; class=&quot;codepen&quot;&gt;See the Pen &lt;a href=&quot;http://codepen.io/lmosele/pen/vNaYGq/&quot;&gt;vNaYGq&lt;/a&gt; by Lucas Mosele (&lt;a href=&quot;http://codepen.io/lmosele&quot;&gt;@lmosele&lt;/a&gt;) on &lt;a href=&quot;http://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/p&gt;
+&lt;script async=&quot;&quot; src=&quot;//assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;basic-styling&quot;&gt;Basic Styling&lt;/h2&gt;
+
+&lt;h3 id=&quot;font-size&quot;&gt;Font-Size&lt;/h3&gt;
+&lt;p&gt;The biggest improvements you can make to a site can be made almost exclusively on a universal level. &lt;a href=&quot;http://practicaltypography.com/typography-in-ten-minutes.html&quot;&gt;Butterick’s Practical Typography&lt;/a&gt; (a must read) states that the best type for screen sizes is 16px (1em in relative measurements). This is a common sight throughout the web, so it’s a safe bet when choosing a standard, it’s also worth noting that unless you choose otherwise, 1em is equivalent to 16px by default:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;nt&quot;&gt;div&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.content&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;font-size&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1em&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;/* or 16px */&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;As I said before however, hard and fast rules may not &lt;em&gt;always&lt;/em&gt; be the solution. Take phones for example, certain displays may render your 16px/1em text as smaller than you’d like, so boosting your font size to 18px/1.125em or 19px/1.2em may sometimes be a good option.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;nt&quot;&gt;div&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.content&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;font-size&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1em&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;/* or 16px */&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;@media&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;max-width&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;480px&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;nt&quot;&gt;div&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.content&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+		&lt;span class=&quot;k&quot;&gt;font-size&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1.125em&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;/* or 18px */&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Also, if you haven’t noticed, I like to use &lt;em&gt;em&lt;/em&gt; (relative measurements) rather than pixels. This keeps me from being inconsistent in my code since I’d rather keep with the 1em, 1.5em, 2em &lt;em&gt;font-size&lt;/em&gt; pattern than memorizing 16px, 24px, 32px. There are many other benefits to &lt;em&gt;em&lt;/em&gt; as well, but we’ll get to that some other time.&lt;/p&gt;
+
+&lt;h3 id=&quot;line-height&quot;&gt;Line-Height&lt;/h3&gt;
+
+&lt;p&gt;If you haven’t already read Jason Pamental’s &lt;a href=&quot;http://typecast.com/blog/a-more-modern-scale-for-web-typography&quot;&gt;&lt;em&gt;A More Modern Scale For Web Typography&lt;/em&gt;&lt;/a&gt; then I recommend you stop reading and go check it out now.&lt;/p&gt;
+
+&lt;p&gt;Read it? Good. It’s a great starting point for understanding the importance of responsive web typography and how it affects our readability and design.&lt;/p&gt;
+
+&lt;p&gt;With that said, we can take some cues from the article and give our body text some breathing room by giving our 1em (16px) font a line height of 1.375em (22px) on desktop:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;nt&quot;&gt;div&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.content&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;font-size&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1em&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;/* or 16px */&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;line-height&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1.375em&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;/* or 22px */&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;#333&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;@media&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;max-width&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;480px&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;nt&quot;&gt;div&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.content&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+		&lt;span class=&quot;k&quot;&gt;font-size&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1.125em&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;/* or 18px */&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Wonderful. Now it’s time to style our headers, but first, let’s talk about fonts.&lt;/p&gt;
+
+&lt;h3 id=&quot;font-selection&quot;&gt;Font Selection&lt;/h3&gt;
+
+&lt;p&gt;The world of typography is surprisingly massive and in-depth, so without going too in depth, it’s important to understand the basics of what makes a good font. For now&lt;/p&gt;
+
+&lt;p&gt;Serif &amp;amp; Sans-Serif&lt;/p&gt;
+
+&lt;p&gt;Besides script fonts and special fonts, the majority of fonts come in the form of either Serif or Sans-Serif fonts. Serif and San-Serif are just french for “little thingies” and “no little thingies” respectively.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Serif fonts&lt;/em&gt; are sometimes referred to as “Roman” and tend to lean towards more old school styles and are commonly used in text and body copy due to its readability. The fonts you may be familiar with in this family are Times New Roman &amp;amp; Georgia.&lt;/p&gt;
+
+&lt;!-- _includes/image.html --&gt;
+&lt;div class=&quot;image-wrapper&quot;&gt;
+    
+        &lt;img src=&quot;https://upload.wikimedia.org/wikipedia/commons/2/26/Serif_and_sans-serif_03.svg&quot; alt=&quot;&quot; /&gt;
+    
+    
+        &lt;p class=&quot;image-caption&quot;&gt;Serif Font, courtesy of Wikipedia&lt;/p&gt;
+    
+&lt;/div&gt;
+
+&lt;p&gt;&lt;em&gt;San-Serif&lt;/em&gt; fonts (meaning “without serif”) are sometimes referred to as Grotesque/Gothic typefaces. Sans-serif fonts are usually modern, and commonly used for headlines and user interfaces. Familar fonts in this family are Helvetica &amp;amp; Arial.&lt;/p&gt;
+
+&lt;!-- _includes/image.html --&gt;
+&lt;div class=&quot;image-wrapper&quot;&gt;
+    
+        &lt;img src=&quot;https://upload.wikimedia.org/wikipedia/commons/9/99/Serif_and_sans-serif_01.svg&quot; alt=&quot;&quot; /&gt;
+    
+    
+        &lt;p class=&quot;image-caption&quot;&gt;Sans-Serif Font, courtesy of Wikipedia&lt;/p&gt;
+    
+&lt;/div&gt;
+
+&lt;p&gt;Obviously these are just generalizations, fonts like Open Sans and Helvetica work great for all sorts of roles, including long bodies of text, and with the right amount of styling some serif fonts can be used effectively for user interfaces.&lt;/p&gt;
+
+&lt;p&gt;For our use however,&lt;/p&gt;
+
+</description>
+        <pubDate>Sun, 01 Nov 2015 15:30:00 -0500</pubDate>
+        <link>http://blog.lmosele.com/design/tutorial/2015/11/01/basics-of-web-typography.html</link>
+        <guid isPermaLink="true">http://blog.lmosele.com/design/tutorial/2015/11/01/basics-of-web-typography.html</guid>
+        
+        
+        <category>design</category>
+        
+        <category>tutorial</category>
+        
+      </item>
+    
+      <item>
+        <title>Meet The Maker: Lisa Hsieh of Mien Studios</title>
+        <description>&lt;p&gt;&lt;em&gt;I recently had the opportunity to collaborate with LA-based designer Lisa Hsieh of &lt;a href=&quot;http://www.mienstudios.com/&quot;&gt;Mien Studios&lt;/a&gt;. I really admired her choices in the direction of Mien’s aesthetics and their beautiful &lt;a href=&quot;https://instagram.com/mienstudios/&quot;&gt;Instagram feed&lt;/a&gt; so I was excited to collaborate and base the shoot off of their very minimal yet bold style.&lt;/em&gt;&lt;/p&gt;
+
+&lt;!-- _includes/image.html --&gt;
+&lt;div class=&quot;image-wrapper&quot;&gt;
+    
+        &lt;img src=&quot;/assets/img/post/2015-10-27-meet-the-maker-lisa-hsieh-1.jpg&quot; alt=&quot;&quot; /&gt;
+    
+    
+        &lt;p class=&quot;image-caption&quot;&gt;Photos: Lucas Mosele | Model: Jessica Nylander&lt;/p&gt;
+    
+&lt;/div&gt;
+
+&lt;h4 id=&quot;can-you-give-some-background-on-yourself-in-a-few-sentences&quot;&gt;Can you give some background on yourself in a few sentences?&lt;/h4&gt;
+&lt;p&gt;I’m Lisa Hsieh. I’m 34 years old and earlier this year established a new menswear and womenswear brand, Mien. I was born in Taiwan and lived between Taiwan the States until I permanently moved to Southern California with my family when I was sixteen. Growing up between two different cultures and trying to successfully assimilate to each one helped me develop a tenacity and resilience that has helped me start a business on my own. I’m very grateful to my parents who have given up their comfortable life in Taiwan to give me the chance of an even better life and opportunities here in the U.S. My family’s unwavering support is motivation for me to always try harder.&lt;/p&gt;
+
+&lt;h4 id=&quot;how-did-you-get-into-fashiondesign&quot;&gt;How did you get into fashion/design?&lt;/h4&gt;
+&lt;p&gt;I’ve been drawing and painting since I was a child and after graduating from university with a fine art degree, I instinctively knew that I wanted to pursue my interest in fashion design. Of course, getting my foot into the fashion industry door eight years ago wasn’t easy. With no formal training in fashion design but only a few fashion courses I’ve taken at a local art school, I worked unpaid internships for fashion companies, helped out in fashion showrooms (fetching coffee, fixing printers, you name it) and worked backstage at Los Angeles Fashion Week steaming garments and dressing models all while working full time jobs at high end fashion boutiques to familiarize myself with the fashion retail world. Soon, I found a job working for a local, small indie designer, helping in design and garment sewing. I then moved onto designing for a premium denim brand and worked my way up from design assistant to art director. My last design job was for a prominent evening wear couture house in Los Angeles. There was a short a couple of years before I started my own brand when I left the fashion industry to pursue a Masters degree in Art because I was feeling burnt out from the fast-paced industry. During that time, I was pulled into the architectural design world and briefly worked as an interior designer for a high end remodeling firm for two years. Although it was the start of a rewarding career path, albeit an entirely different one, I ultimately decided that fashion design was where my heart was at. Now I am building a brand from the ground up and I haven’t looked back.&lt;/p&gt;
+
+&lt;!-- _includes/image.html --&gt;
+&lt;div class=&quot;image-wrapper&quot;&gt;
+    
+        &lt;img src=&quot;http://static1.squarespace.com/static/54c6f42ce4b02b23453790be/5540336de4b0792c8c726ee1/554037a3e4b033b0c2b3e749/1430272028553/Debut+Preview_Mien_RS001.jpg?format=2500w&quot; alt=&quot;&quot; /&gt;
+    
+    
+        &lt;p class=&quot;image-caption&quot;&gt;Courtesy of Mien Studios&lt;/p&gt;
+    
+&lt;/div&gt;
+
+&lt;h4 id=&quot;what-was-the-inspiration-for-mien&quot;&gt;What was the inspiration for Mien?&lt;/h4&gt;
+&lt;p&gt;Mien, pronounced mēn, means a person’s air or bearing; an expressive attitude or personality one exudes. My design sensibility is deeply influenced by my fine art background. My paintings resembles watercolor paintings with intricate line drawings and delicate paper cutouts layered throughout. The process is tedious and requires meticulousness. I design in much of the same way, obsessing over the small details, eliminating the excess while preserving what makes a garment unique and deserving of a shelf space in its future owner’s closet. For me, the value of a favorite wardrobe piece lies within its timeless design, high quality construction and comfort - qualities I work hard to include in Mien’s collection.&lt;/p&gt;
+
+&lt;p&gt;With fast fashion trends, one doesn’t seem to be wearing the clothes but it’s the other way around. Mien offers the opposite effect, by wearing well-made, thoughtfully design garments the wearer is one who stands out, not the clothes. The launch collection is very minimal in design consisting of mostly black and white but it’s not meant to be a “minimalist” line. I started out with offerings of understated but elevated wardrobe basics but will be adding more complex styles and designs in the form of cocktail dresses for women and outerwear for men. It’s also important to note that the line is made in Downtown Los Angeles. Having production done in American helps with our local economy but also allows me to be hands-on with the entire process from design to production.&lt;/p&gt;
+
+&lt;h4 id=&quot;who-are-your-favorite-designers-musicians&quot;&gt;Who are your favorite designers? Musicians?&lt;/h4&gt;
+&lt;p&gt;I’m a fan of fashion designers Alexander McQueen and Isabel Toledo. As for music, my Spotify is always streaming Madeleine Peyroux, Ella Fitzgerald, Adele and occasionally Maroon 5.&lt;/p&gt;
+
+&lt;h4 id=&quot;anything-else-youd-like-to-add&quot;&gt;Anything else you’d like to add?&lt;/h4&gt;
+&lt;p&gt;I’d love for people to visit &lt;a href=&quot;www.mienstudios.com&quot;&gt;Mien’s website&lt;/a&gt; to take a look at the collection and brand story. They can also follow Mien’s &lt;a href=&quot;www.instagram.com/mienstudios&quot;&gt;Instagram page&lt;/a&gt;, username @mienstudios, to see inspirations and updates.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;em&gt;You can also see some Mien shots on my &lt;a href=&quot;www.instagram.com/300iso&quot;&gt;Instagram&lt;/a&gt;, or on my portfolio site, &lt;a href=&quot;https://photography.lmosele.com&quot;&gt;photography.lmosele.com&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Tue, 27 Oct 2015 13:30:00 -0400</pubDate>
+        <link>http://blog.lmosele.com/photography/journal/2015/10/27/meet-the-maker-lisa-hsieh.html</link>
+        <guid isPermaLink="true">http://blog.lmosele.com/photography/journal/2015/10/27/meet-the-maker-lisa-hsieh.html</guid>
+        
+        
+        <category>photography</category>
+        
+        <category>journal</category>
+        
+      </item>
+    
+      <item>
+        <title>Photo 101: Choosing the Right Camera</title>
+        <description>&lt;p&gt;Christmas is coming and so is Christmas vacation season, in order to prepare, many of us try to buy the best beginner friendly camera to capture our moments like the pros. Unfortunately, there are thousands of options titled with fancy photography lingo and marketing jazz that distract you from what you actually want: a camera that takes good pictures. This article is meant to point someone in the right direction based on my personal recommendations for cameras.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Cameras are expensive, in fact, decent entry level DSLRs will set you back at least $500. There are a lot of options, so let’s start with making the right purchase. First, let’s nail down what you are looking for:&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Disclaimer, I am not being paid for any of the links provided here and all camera recommendations are from personal experience or the experiences of photographers I know.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;for-portraits--life-snapshots&quot;&gt;&lt;em&gt;For Portraits &amp;amp; Life Snapshots&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;The most common usage for entry-level DSLRs is for family snapshots and photos of backyards. I don’t have data to back this up, but I’m going to assume that these two categories are up there (with railroad track photos coming at a close third). That being said, a camera for situations where you are in a backyard BBQ or an indoor house party needs to be light, small, and have a great sensor for low-light scenarios. A pop up flash is also a great feature in many entry level cameras, and although many photographers shudder at the idea of pop-ups, the reality is no one wants to be the guy with the 2lb. $400 strobe at the family party.&lt;/p&gt;
+
+&lt;p&gt;&lt;!-- _includes/image.html --&gt;&lt;/p&gt;
+&lt;div class=&quot;image-wrapper&quot;&gt;
+    
+        &lt;img src=&quot;https://c2.staticflickr.com/8/7415/8718469341_f445b6d2d4_b.jpg&quot; alt=&quot;Pictured: Not a fun party&quot; /&gt;
+    
+    
+        &lt;p class=&quot;image-caption&quot;&gt;Pictured: Not a fun party&lt;/p&gt;
+    
+&lt;/div&gt;
+
+&lt;p&gt;When looking for a camera, ignore the hype over higher megapixel count and make note of its ISO capabilities instead. ISO is the camera sensor’s sensitivity to light, so having a higher number usually means that you can boost your light performance considerably in a situation that requires it (at the cost of noisier images, entry level cameras can only perform so well). A common ISO range for DSLR’s under $1000 nowadays is above ~6400 ISO, so look for cameras on or above that range.&lt;/p&gt;
+
+&lt;p&gt;In the case of portraits, lenses are also a huge factor. We’ll get to this in another section, but for now just understand that &lt;em&gt;money spent on glass is never money wasted&lt;/em&gt;. The &lt;a href=&quot;http://www.amazon.com/Rebel-T5i-Camera-Telephoto-Accessory/dp/B00COSHR20/ref=sr_1_3?s=photo&amp;amp;ie=UTF8&amp;amp;qid=1444183509&amp;amp;sr=1-3&amp;amp;keywords=canon+t5i&quot;&gt;“kit” bundles&lt;/a&gt; you can buy on Amazon and Ebay seem like great deals, and in most cases they are, but you will be receiving average (sometimes less-than-average) “kit” glass aimed at beginners. If you’re looking for variety and flexibility in your photos, these are the way to go for now. If you’re looking for sharper, more professional photos that can give that “creamy bokeh look” then you’ll need a “fast” lens.&lt;/p&gt;
+
+&lt;p&gt;&lt;!-- _includes/image.html --&gt;&lt;/p&gt;
+&lt;div class=&quot;image-wrapper&quot;&gt;
+    
+        &lt;img src=&quot;https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Shallow_Depth_of_Field_with_Bokeh.jpg/1024px-Shallow_Depth_of_Field_with_Bokeh.jpg&quot; alt=&quot;Note the blurred background&quot; /&gt;
+    
+    
+        &lt;p class=&quot;image-caption&quot;&gt;Note the blurred background produced by wide aperture.&lt;/p&gt;
+    
+&lt;/div&gt;
+
+&lt;p&gt;Contrary to their name, fast lenses aren’t necessarily faster at anything, and can be told apart from other lenses by the lower F-stop numbers in their names (ie: the &lt;a href=&quot;http://www.amazon.com/Canon-50mm-1-8-Camera-Lens/dp/B00007E7JU/ref=sr_1_2?ie=UTF8&amp;amp;qid=1444180850&amp;amp;sr=8-2&amp;amp;keywords=50mm+f1.8&quot;&gt;Canon 50mm F1.8&lt;/a&gt; and &lt;a href=&quot;http://www.amazon.com/Nikon-Focus-S-NIKKOR-Digital-Cameras/dp/B004Y1AYAC&quot;&gt;Nikon 50mm F1.8&lt;/a&gt;). Also called prime lenses, these lenses &lt;em&gt;are not zoom lenses&lt;/em&gt; but are instead characterized by their fixed focal length (ie: non-zoominess) and their wide apertures. The benefits of prime lenses outweigh their few cons: they’re almost always lighter, smaller and provide considerably better image quality per price than their zoom counterparts. The best part? The lower the aperture number, the more light they let in, so you can easily snap beautiful photos in dimly lit places like concerts, parties and the occasional basement dungeons.&lt;/p&gt;
+
+&lt;p&gt;My Suggestion for portraits? Purchase a camera body and a fast lens individually:&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Portrait Recommendation - Low Budget:&lt;/strong&gt;&lt;/em&gt; &lt;a href=&quot;http://www.amazon.com/Canon-Rebel-DSLR-Camera-Body/dp/B00IYP6S2C&quot;&gt;Canon T5 Body Only&lt;/a&gt; &amp;amp; &lt;a href=&quot;http://www.amazon.com/Canon-50mm-1-8-STM-Lens/dp/B00X8MRBCW/ref=sr_1_1?s=photo&amp;amp;ie=UTF8&amp;amp;qid=1444182031&amp;amp;sr=1-1&amp;amp;keywords=canon+50mm+1.8&quot;&gt;Canon 50mm f1.8 STM&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Portrait Recommendation - Higher Budget:&lt;/strong&gt;&lt;/em&gt; &lt;a href=&quot;http://www.amazon.com/Canon-20-2-Digital-Camera-3-0-Inch/dp/B009B0MZ8U/ref=sr_1_1?s=photo&amp;amp;ie=UTF8&amp;amp;qid=1444182187&amp;amp;sr=1-1&amp;amp;keywords=canon+6d+body+only&quot;&gt;Canon 6D Body Only&lt;/a&gt; &amp;amp; &lt;a href=&quot;http://www.amazon.com/Canon-Standard-Medium-Telephoto-Cameras/dp/B00009XVCZ/ref=sr_1_1?s=photo&amp;amp;ie=UTF8&amp;amp;qid=1444182257&amp;amp;sr=1-1&amp;amp;keywords=canon+50mm+1.4&quot;&gt;Canon 50mm f1.4&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;If you want something smaller and lighter, then my favorite camera is right for you. A Sony A7 with one of the sharpest lenses ever made should handle all your portrait and general needs, albeit without zoom ability. It’s also the camera I used to shoot pretty much &lt;a href=&quot;https://photographer.lmosele.com&quot;&gt;my entire portfolio&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Alternate Recommendation&lt;/strong&gt;&lt;/em&gt; &lt;a href=&quot;http://www.bhphotovideo.com/c/product/1008114-REG/sony_ilce7_b_a7_mirrorless_digital_camera.html&quot;&gt;Sony A7&lt;/a&gt; &amp;amp; &lt;a href=&quot;http://www.bhphotovideo.com/c/product/1008124-REG/sony_sel55f18z_sonnar_t_fe_55mm.html&quot;&gt;Zeiss 55mm f1.8&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;for-travel--street-photography&quot;&gt;&lt;em&gt;For Travel &amp;amp; Street Photography&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;The advent of digital cameras and social media has changed popular conception of photographers from creepy middle-aged men offering “free senior portraits” in their home studio to visible and (somewhat) respected artists who make an impact in the world by telling stories through their photos. If you’re interested in engaging viewers with compelling urban photos, be it through street or travel photography, then your optimal camera will be small but powerful. In this case, mirrorless cameras win out due to their size, weight, fast autofocus, and oftentimes more modern features like WiFi &amp;amp; NFC.&lt;/p&gt;
+
+&lt;p&gt;&lt;!-- _includes/image.html --&gt;&lt;/p&gt;
+&lt;div class=&quot;image-wrapper&quot;&gt;
+    
+        &lt;img src=&quot;https://c1.staticflickr.com/9/8543/8701716741_189d9703da_b.jpg&quot; alt=&quot;Capturing images quickly is essential&quot; /&gt;
+    
+    
+        &lt;p class=&quot;image-caption&quot;&gt;Capturing brief moments quickly and on focus is essential to street photogs.&lt;/p&gt;
+    
+&lt;/div&gt;
+
+&lt;p&gt;Speed, size and weight are all qualities that &lt;a href=&quot;http://www.techradar.com/us/news/photography-video-capture/cameras/best-compact-system-camera-2013-the-best-models-reviewed-960832&quot;&gt;mirrorless cameras&lt;/a&gt; excel in, so we’ll be discussing from the viewpoint of one of these tiny superheroes:&lt;/p&gt;
+
+&lt;p&gt;&lt;!-- _includes/image.html --&gt;&lt;/p&gt;
+&lt;div class=&quot;image-wrapper&quot;&gt;
+    
+        &lt;img src=&quot;https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Sony_Alpha_ILCE-6000_APS-C-frame_camera_with_lens.jpeg/640px-Sony_Alpha_ILCE-6000_APS-C-frame_camera_with_lens.jpeg&quot; alt=&quot;The Sony A6000&quot; /&gt;
+    
+    
+        &lt;p class=&quot;image-caption&quot;&gt;The Sony A6000&lt;/p&gt;
+    
+&lt;/div&gt;
+
+&lt;p&gt;The Sony A6000, while not the &lt;em&gt;best&lt;/em&gt; street photography camera out there, is definitely one of the best small cameras on a budget. It represents many of the features street photographers crave: the ability to shoot fast (11 frames per second), focus quickly (hybrid autofocus), capture detail (24mp sensor with no AA filter), and weigh next to nothing (the metal body of the camera weighs 16 ounces). The look of mirrorless cameras also provides a not so obvious advantage: the vintage looks and small size keep your camera discrete and safe. In unsafe areas, it can be a comforting thought to know that no one will be eyeing your camera.&lt;/p&gt;
+
+&lt;p&gt;Since the A6000 is one of my favorite secondary cameras, so the recommendation comes naturally:&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Street Recommendation - Low Budget:&lt;/strong&gt;&lt;/em&gt; &lt;a href=&quot;http://www.amazon.com/Sony-Alpha-Mirrorless-Digital-Camera/dp/B00I8BICCG&quot;&gt;Sony A6000 Body Only&lt;/a&gt; &amp;amp; &lt;a href=&quot;http://www.amazon.com/Sony-SEL16F28-16mm-Wide-Angle-Cameras/dp/B003NRHAH8/ref=sr_1_1?s=photo&amp;amp;ie=UTF8&amp;amp;qid=1444189105&amp;amp;sr=1-1&amp;amp;keywords=sony+16mm&quot;&gt;Sony E 16mm Wide Angle Lens&lt;/a&gt; or &lt;a href=&quot;http://www.amazon.com/Sony-28-70mm-F3-5-5-6-Interchangeable-Standard/dp/B00GTXHQ8Q&quot;&gt;Sony FE 28-70mm F3.5-5.6 OSS&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;An optional arrangement with a native E-mount zoom allows for sharp wider angle shots perfect for landscapes and tight street photography spaces:&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Street Recommendation - Higher Budget:&lt;/strong&gt;&lt;/em&gt; &lt;a href=&quot;http://www.amazon.com/Sony-Alpha-Mirrorless-Digital-Camera/dp/B00I8BICCG&quot;&gt;Sony A6000 Body Only&lt;/a&gt; &amp;amp; &lt;a href=&quot;http://www.amazon.com/Sony-SEL1018-10-18mm-Wide-Angle-Zoom/dp/B0096W1ONK/ref=sr_1_1?s=photo&amp;amp;ie=UTF8&amp;amp;qid=1444189217&amp;amp;sr=1-1&amp;amp;keywords=sony+18mm&quot;&gt;Sony 10-18mm Wide Angle&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;A favorite of many photographers I know, the Fuji is new to me, but is a beautiful camera that takes beautifully crispy photos. Well worth exploring as an option:&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Alternate Recommendation:&lt;/strong&gt;&lt;/em&gt; &lt;a href=&quot;http://www.amazon.com/Fujifilm-X100T-Digital-Camera-Black/dp/B00NF6ZHNG&quot;&gt;Fujifilm X100T&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;wildlife--sports&quot;&gt;&lt;em&gt;Wildlife &amp;amp; Sports&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;I know that lumping these two categories would likely make afficionados on either side angry at me, but let’s face it, when I think of shooting wildlife and sports, all I think of is: &lt;strong&gt;Big Telephoto&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;!-- _includes/image.html --&gt;&lt;/p&gt;
+&lt;div class=&quot;image-wrapper&quot;&gt;
+    
+        &lt;img src=&quot;https://upload.wikimedia.org/wikipedia/commons/2/24/Formula_One_Photographers.jpg&quot; alt=&quot;Courtesy of Wikipedia&quot; /&gt;
+    
+    
+        &lt;p class=&quot;image-caption&quot;&gt;Courtesy of Wikipedia&lt;/p&gt;
+    
+&lt;/div&gt;
+
+&lt;p&gt;I’ll admit, I have very little practical experience with either wildlife or “official” sport photography, so take my advice with a grain of salt if need be. You’ll need a camera that both shoots fast and focuses quickly, as well as a sharp zoom lens with the ability to catch fast moving subjects. My recommendation would be the 7D, a pro-sumer camera that just recently received an updated MK. II version. The 7D line is famous for its fast autofocus (and fast everything really) so it’s a natural option for those serious about shooting fast, quick, and far. For the lower budget MK.I you can find a used body for relatively cheap, although I’ll be linking to a new version here.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Sports, Action &amp;amp; Wildlife Recommendation - Low Budget:&lt;/strong&gt;&lt;/em&gt; &lt;a href=&quot;http://www.amazon.com/Canon-Digital-Camera-discontinued-manufacturer/dp/B002NEGTTW&quot;&gt;Canon 7D MK. I&lt;/a&gt; &amp;amp; &lt;a href=&quot;http://www.bhphotovideo.com/c/product/543923-USA/Canon_2044B002AA_EF_S_55_250mm_f_4_5_6_IS.html&quot;&gt;Canon 55-250mm f/4-5.6 IS II&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Sports, Action &amp;amp; Wildlife Recommendation - Higher Budget:&lt;/strong&gt;&lt;/em&gt; &lt;a href=&quot;http://www.bhphotovideo.com/c/product/1081808-REG/canon_9128b002_eos_7d_mark_ii.html&quot;&gt;Canon 7D MK. II&lt;/a&gt; &amp;amp; &lt;a href=&quot;http://www.bhphotovideo.com/c/product/457678-USA/Canon_1258B002AA_EF_70_200mm_f_4L_IS.html&quot;&gt;Canon 70-200mm f/4L IS USM&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;em&gt;I’ll be updating this post if it gets enough traction, let me know if you have any questions or comments on anything I should add!&lt;/em&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Tue, 13 Oct 2015 16:31:00 -0400</pubDate>
+        <link>http://blog.lmosele.com/photography/tutorial/2015/10/13/choosing-camera.html</link>
+        <guid isPermaLink="true">http://blog.lmosele.com/photography/tutorial/2015/10/13/choosing-camera.html</guid>
+        
+        
+        <category>photography</category>
+        
+        <category>tutorial</category>
+        
+      </item>
+    
+  </channel>
+</rss>
